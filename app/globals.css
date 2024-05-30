@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-section {
+  background-image: url("../public/hero-section.png");
+}
+
+.footer {
+  background-image: url("../public/Footer.png");
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  cursor: pointer;
+}
+
+.hamburger > div {
+  width: 1.4375rem;
+  height: 0.1875rem;
+  background-color: #fff;
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: rotate(-47deg) translate(-0.4375rem, 0.4375rem);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: rotate(46deg) translate(-0.25rem, -0.3125rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
