@@ -47,7 +47,7 @@ const Products = (props: ProductDataProps) => {
   };
 
   return (
-    <section className="bg-[#e4eff7] px-[10%] xl:px-[14%] py-24 my-32">
+    <section className="bg-[#c4d2dc] px-[10%] xl:px-[14%] py-24 my-20 xl:my-32">
       <div>
         <h2 className="bg-gradient-to-r from-[#f5f3f3] text-[#00386B] w-12 h-12 text-2xl py-2 px-8 font-semibold">
           {title}
@@ -65,7 +65,7 @@ const Products = (props: ProductDataProps) => {
               key={item?.id}
               className={`text-sm lg:text-base text-[#797979] border border-[#797979] px-4 py-1 ${
                 selectedCard.id === item.id
-                  ? "text-[#476bd7] border-[#00386B] bg-gradient-to-r from-[#eaf5f5] via-white to-[#eaf5f5]"
+                  ? "text-[#6485e7] border-[#136ec3] bg-gradient-to-r from-[#eaf5f5] via-white to-[#eaf5f5]"
                   : ""
               }`}
               onClick={() => handleButtonClick(item)}
@@ -97,7 +97,7 @@ const Products = (props: ProductDataProps) => {
               </button>
             </div>
 
-            <div className="basis-full lg:basis-1/2 px-10 py-12 md:py-24 md:pl-12 md:pr-32 max-w-[600px] bg-gradient-to-b from-[#fcfeff] to-[#c1d0ef] relative">
+            <div className="basis-full lg:basis-1/2 px-10 py-12 md:py-24 md:pl-12 md:pr-32 max-w-[600px] bg-gradient-to-b from-[#ffffff] to-[#e4eef6] relative">
               <p className="text-[#818181]">Product {selectedCard.id}/5</p>
               <h2 className="text-2xl md:text-3xl md:leading-10 my-3">
                 {selectedCard.title}

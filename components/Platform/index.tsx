@@ -34,12 +34,12 @@ const Platform = (props: PlatformData) => {
   };
 
   return (
-    <section className="px-[10%] lg:px-[17%]">
+    <section className="px-[10%] lg:px-[14%] mb-16 xl:mb-24">
       <p className="mx-auto text-2xl lg:text-4xl xl:text-5xl xl:max-w-[840px] text-center font-medium">
         The platform assists city managers on multiple fronts
       </p>
 
-      <div className="flex flex-wrap gap-y-5 mt-20 ">
+      <div className="flex flex-wrap gap-y-5 mt-12 xl:mt-20 bg-gradient-to-b from-[#ffffff] to-[#f7f8fa] px-2">
         {data.map((item, index) => (
           <div key={item.id} className={getGridItemClasses(index)}>
             <div className="w-[84px] h-[84px]">

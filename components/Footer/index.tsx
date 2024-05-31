@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
@@ -14,8 +15,12 @@ const Footer = () => {
         </div>
         <div>
           <ul className="text-white text-lg flex flex-col lg:flex-row gap-5 lg:gap-12 items-baseline">
-            <li>Product</li>
-            <li>Software Services</li>
+            <li>
+              <Link href="#products">Products</Link>
+            </li>
+            <li>
+              <Link href="#ecosystem">Software Services</Link>
+            </li>
             <li>Follow Us</li>
           </ul>
         </div>

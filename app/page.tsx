@@ -13,12 +13,15 @@ export default function Home() {
       <section id="home">
         <HeroSection />
       </section>
+
       <section id="ecosystem">
         <Ecosystem />
       </section>
+
       <section id="products">
         <Products data={productData} />
       </section>
+      
       <Platform data={platformData} />
       <Footer />
     </main>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hero-section {
   background-image: url("../public/hero-section.png");
 }
@@ -35,6 +39,6 @@
   transform: rotate(46deg) translate(-0.25rem, -0.3125rem);
 }
 
-html {
-  scroll-behavior: smooth;
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
